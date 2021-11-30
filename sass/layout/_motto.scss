@@ -1,0 +1,70 @@
+.motto {
+    background-image: url(../images/img-tlo.png);
+    width: auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    &__container {
+        flex-direction: column;
+    }
+
+    &__heading {
+        font-size: 44px;
+        font-weight: 900;
+        text-align: center;
+        padding-top: 200px;
+        padding-bottom: 30px;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .motto {
+       background-image: url(../images/img-mobile.png);
+       background-repeat: no-repeat;
+       background-size: 480px 400px;
+
+       
+       &__heading {
+           font-size: 26px;
+       }
+       &__container {
+        width: 480px;
+        }
+    }      
+} 
+@media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx),
+            (min-width: 480px) {
+                .motto {
+                    background-image: url(../images/img-mobile@2x.png);;
+                }
+        
+            }
+
+
+@media screen and (max-width: 768px) {
+    .motto {
+        background-image: url(../images/img-tablet.png);
+        background-repeat: no-repeat;
+        background-size: 768px 400px;
+        
+        &__heading {
+            font-size: 26px;
+        }
+        
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx),
+            (min-width: 768px) {
+                .motto {
+                    background-image: url(../images/img-tablet@2x.png);;
+                }
+        
+            }

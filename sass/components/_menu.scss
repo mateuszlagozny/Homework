@@ -1,0 +1,78 @@
+
+.menu-mobile {
+    position: relative;
+}
+
+.hamburger-menu {
+    position: relative;
+
+}
+
+.icon-menu {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (min-width: 480px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+
+.menu-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 796px;
+    background-color: #fff;
+    transition-property: transform;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffff;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-duration: 1500ms;
+}
+
+.mobile-link {
+    font-size: 40px;
+    display: block;
+    margin-left: 40px;
+}
+
+.contact-mobile {
+    margin-top: 300px;
+    font-size: 34px;
+    position: fixed;
+    bottom: 134px;
+    left: 40px;
+}
+
+.social__mobile {
+    font-size: 18px;
+    position: fixed;
+    bottom: 48px;
+    left: 40px;
+}
+
+.social__mobile--link {
+    color: $primary-color;
+}
+

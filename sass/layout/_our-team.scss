@@ -1,0 +1,53 @@
+.our-team {
+    background-color: $secondary-color;
+    width: auto;
+    height: 708px;
+    padding-top: 94px;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+    .our-team {
+        width: 480px;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-team {
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+
+
+figure {
+    display: inline-block;
+    margin: 7px;
+    background-color: #ffff;
+    border-radius: 4px;
+    justify-content: space-between;
+    text-align: center;
+
+    &__our-team {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+        
+    }
+
+
+}
+
+
+.name-team {
+    padding: 15px;
+    text-align: center;
+
+    &__span {
+        font-weight: 500;
+        color: black;
+    }
+
+}
